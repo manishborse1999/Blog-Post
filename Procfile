@@ -1,1 +1,1 @@
-web: gunicorn Icoder.wsgi
+web:gunicorn Icoder.wsgi
