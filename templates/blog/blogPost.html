@@ -48,8 +48,8 @@
             <b>{{comment.user.username}}</b> <span
                 class="badge badge-secondary">{{comment.timeStamp | naturaltime }}</span>
             <div>{{comment.comment}}</div>
-            {% if user.is_authenticated %}
             <div class="reply mx-0">
+            {% if user.is_authenticated %}
                 <button class="btn btn-primary btn-sm my-2" type="button" data-toggle="collapse"
                         data-target="#replybox{{comment.sno}}"
                         aria-expanded="false" aria-controls="replybox{{comment.sno}}">
